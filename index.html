@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Project Pi</title>
+        <link rel="icon" type="image/x-icon" href=https://freesvg.org/img/Pi-Black.png>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!-- Header -->
+     <h1>Project Pi </h1>
+     <div id="symbol">
+     <!-- Image  -->
+    <img src="https://freesvg.org/img/Pi-Black.png" alt="Game pic" height="200px"/>
+    </div>
+     <!-- subheaders -->
+     <div id="rules">
+    <h2> Rules</h2>
+    <p>
+    <ul> 
+        <li> Click the apples to find the treasure </li>
+        <li> If you click on the bomb, you lose </li>
+        <li> If you find the rainbow, you win  </li>
+        </ul>
+    </p>
+    </div>
+    <div id="outcome">
+    <p id="Outcome"></p>
+    </div>
+    <div id="gametable"> 
+         <!-- table  -->
+    <table border="5" height="200px" width="300px">
+        <tr>
+            <!-- Make these cells clickable
+            When click they turn into emojis -->
+            <td onclick="treasure(0)"id=0> 🍏 </td>
+            <td onclick="treasure(1)"id=1> 🍏</td>
+            <td onclick="treasure(2)"id=2> 🍏</td>
+        </tr>
+        <tr>
+            <td onclick="treasure(3)" id=3> 🍏  </td>
+            <td onclick="treasure(4)" id=4> 🍏 </td>
+            <td onclick="treasure(5)" id=5> 🍏 </td>
+        </tr>
+        <tr>
+            <td onclick = "treasure(6)" id = 6>🍏</td>
+            <td onclick = "treasure(7)" id = 7>🍏</td>
+            <td onclick = "treasure(8)" id = 8>🍏</td>
+        </tr> 
+    </table> 
+    </div>
+    <div id="restart">
+    <button button type="button" onclick="location.reload()">Restart Game</button>
+    </div>
+    <!-- footer  -->
+    <div id="footer">
+    <footer> Team Billy & Villi | November Jumpstart |
+        <!-- adding external link    -->
+        <a href="https://www.scientificamerican.com/article/what-is-pi-and-how-did-it-originate/" target="_blank"> Learn about Pi</a> | 
+    </footer>
+    </div>
+    <script type="text/javascript" src="Treasurehunt.js"></script>
+    </body>
+</html>

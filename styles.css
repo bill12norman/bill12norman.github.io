@@ -1,0 +1,70 @@
+@keyframes bounceIn {
+    0% {
+        transform: scaleX(0.5);
+        opacity: 0;
+    }
+    68% {
+        transform: scaleX(1);
+        opacity: 1;
+    }
+    100% {
+        trandorm: scaleX(0.8);
+    }
+}
+h1 {
+    color: black;
+    font-size: 75px;
+    font-weight: bolder;
+    text-align: center;
+    animation: bounceIn 4s infinite;
+}
+
+body {
+    background-image: url("Apple_pie.jpg"); /* The image used */
+    background-color: #906262; /* Used if the image is unavailable */
+    height: 670px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+.top.-text {
+    color: black;
+}
+#rules {
+    display: flex; 
+     justify-content: center;
+     border: 6px solid black;
+     border-radius: 50px;
+     width: 400px;
+     margin: 0 auto;
+}
+#outcome {
+    color: rgb(192, 50, 205);
+    font-weight: bold;
+    font-size: 30px;
+    display: flex; 
+     justify-content: center;
+}
+#symbol {
+    display: flex; 
+     justify-content: center;
+}
+#gametable {
+    display: flex; 
+    justify-content: center;
+}
+#gametable table {
+    background-color: rgb(91, 59, 59);
+    text-align: center;
+}
+#footer {
+    background-color: rgb(62, 88, 62);
+    color:white;
+    display: flex; 
+     justify-content: center;
+}
+#restart {
+    color: red;
+    display: flex; 
+     justify-content: center;
+}
